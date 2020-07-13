@@ -257,7 +257,7 @@ def Chinese(Str,name):
 def Cut():
  str,Medicinal_Name,Medicinal_Other_Name,Medicinal_From,Medicinal_Function,Medicinal_Use_Num,Medicinal_Taste=Open_Data(False)
  #str="我是谁"
- str=['金银花，中药名。为忍冬科忍冬属植物忍冬Lonicera japonica Thunb.、华南忍冬Lonicera confusa （Sweet） DC.、菰腺忍冬Lonicera hypoglauca Miq.、黄褐毛忍冬Lonicera fulvotomentosa Hsu et S. C. Cheng的花蕾。植物忍冬多分布于华东、中南、西南及河北、山西、辽宁、陕西、甘肃等地；华南忍冬多分布于广东、广西、海南；菰腺忍冬分布于浙江、安徽、福建、江西、湖北、湖南、广东、广西、四川、贵州、云南、台湾等；黄褐毛忍冬分布于广西、贵州、云南。具有清热解毒之功效。主治外感风热或温病发热，中暑，热毒血痢，痈肿疔疮，喉痹，多种感染性疾病。']
+ #str=['金银花，中药名。为忍冬科忍冬属植物忍冬Lonicera japonica Thunb.、华南忍冬Lonicera confusa （Sweet） DC.、菰腺忍冬Lonicera hypoglauca Miq.、黄褐毛忍冬Lonicera fulvotomentosa Hsu et S. C. Cheng的花蕾。植物忍冬多分布于华东、中南、西南及河北、山西、辽宁、陕西、甘肃等地；华南忍冬多分布于广东、广西、海南；菰腺忍冬分布于浙江、安徽、福建、江西、湖北、湖南、广东、广西、四川、贵州、云南、台湾等；黄褐毛忍冬分布于广西、贵州、云南。具有清热解毒之功效。主治外感风热或温病发热，中暑，热毒血痢，痈肿疔疮，喉痹，多种感染性疾病。']
  print('获取完成')
  Output=[]
  #判断是否是中文
@@ -269,9 +269,9 @@ def Cut():
  Num=''
  Isstr=False
  Str=''
- First=True
  q=0
  for i in str:
+  First=True
   q=q+1
   print(q,'/',7373)
   a=(jieba.lcut(i))
